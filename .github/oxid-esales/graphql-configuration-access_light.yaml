@@ -17,6 +17,9 @@ install_shop_with_modules:
                         "type": "git",
                         "url": "https://github.com/OXID-eSales/graphql-configuration-access.git"
                     }
+                },
+                "autoload-dev": {
+                    "OxidEsales\\GraphQL\\Base\\Tests\\": "./vendor/oxid-esales/graphql-base/tests"
                 }
             }
     custom_script_container: |
