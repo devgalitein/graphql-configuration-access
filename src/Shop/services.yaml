@@ -12,3 +12,10 @@ services:
 
   OxidEsales\GraphQL\ConfigurationAccess\Shop\Infrastructure\ShopSettingRepositoryInterface:
     class: OxidEsales\GraphQL\ConfigurationAccess\Shop\Infrastructure\ShopSettingRepository
+  
+  OxidEsales\GraphQL\ConfigurationAccess\Infrastructure\GraphQL\Query\ConfigurationAccessQueryProvider:
+    class: OxidEsales\GraphQL\ConfigurationAccess\Infrastructure\GraphQL\Query\ConfigurationAccessQueryProvider
+    public: true
+    autowire: false
+    tags:
+      - { name: graphql.query_provider }
